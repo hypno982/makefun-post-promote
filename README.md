@@ -1,8 +1,12 @@
-# post-x-promote — make.fun make-your-own-bounty post
+# make.fun post entry — make your own bounty
 
-An entry for make.fun's `post-x-promote-make-your-own-bounty-01`: one post on X
-that quotes make.fun's make-your-own-bounty announcement, carries a photo of its
-own, and names the entry's play code.
+[![Competition](https://make.fun/badge/competition/post-x-promote-make-your-own-bounty-01.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![Rank](https://make.fun/badge/rank/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![Reward](https://make.fun/badge/reward/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+
+Entry for [make.fun's make-your-own-bounty post bounty](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01):
+one post on X that quotes make.fun's make-your-own-bounty announcement, carries
+a photo of its own, and names the entry's play code.
 
 - Post: see `POST.json`
 - Program: `main.ts` (Node 22, standard library only)
@@ -31,6 +35,7 @@ Then `out/POST.json` holds a copy of the entry's manifest.
 ```
 main.ts                 the program the grader runs
 POST.json               the post's address on X
+package.json            type: module
 LICENSE                 MIT
 ```
 
