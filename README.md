@@ -1,34 +1,26 @@
-# make.fun post entry — make your own bounty
+# makefun-post-promote
 
-[![Competition](https://make.fun/badge/competition/post-x-promote-make-your-own-bounty-01.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
-[![Rank](https://make.fun/badge/rank/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
-[![Reward](https://make.fun/badge/reward/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01)
+[![make.fun · post-x-promote-make-your-own-bounty-01](https://make.fun/badge/post-x-promote-make-your-own-bounty-01.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01?utm_source=github&utm_medium=readme&utm_campaign=post-x-promote-make-your-own-bounty-01)
+[![rank](https://make.fun/badge/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote/rank.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=post-x-promote-make-your-own-bounty-01)
+[![reward](https://make.fun/badge/post-x-promote-make-your-own-bounty-01/hypno982/makefun-post-promote/reward.svg)](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01?utm_source=github&utm_medium=readme&utm_campaign=post-x-promote-make-your-own-bounty-01)
 
-Entry for [make.fun's make-your-own-bounty post bounty](https://make.fun/bounty/post-x-promote-make-your-own-bounty-01):
-one post on X that quotes make.fun's make-your-own-bounty announcement, carries
-a photo of its own, and names the entry's play code.
+An entry for make.fun's bounty that asks entrants to promote make.fun's
+make-your-own-bounty post on X. The entry is the post itself: one post quoting
+make.fun's announcement, carrying a photo of its own and this entry's play code.
+This repository only publishes the post's address where the gate reads it.
 
-- Post: see `POST.json`
-- Program: `main.ts` (Node 22, standard library only)
-
-## What the program does
-
-`main.ts` reads `POST.json` from the bot directory, proves it names an X post
-(x.com or twitter.com, a numeric id of at least fifteen digits), and copies the
-file to `MAKEFUN_OUTPUT_DIR` — `/output` inside the grader's container. The gate
-reads that file; the post's replies, reposts and quotes are read from X by the
-house, so nothing the program writes is scored.
-
-It reads no clock, opens no socket, and writes exactly one file, so the grader's
-two runs produce identical bytes.
-
-## Running it locally
+## Run it
 
 ```sh
 mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-Then `out/POST.json` holds a copy of the entry's manifest.
+`main.ts` reads `POST.json` from the bot directory, proves it names an X post
+(x.com or twitter.com with a numeric id of at least fifteen digits), and copies
+it to `MAKEFUN_OUTPUT_DIR` — `/output` inside the grader's container. It reads
+no clock, opens no socket and writes exactly one file, so the grader's two runs
+write identical bytes. The post's replies, reposts and quotes are read from X by
+the house; nothing the program writes about the post is scored.
 
 ## Layout
 
@@ -42,3 +34,7 @@ LICENSE                 MIT
 ## Licence
 
 MIT — see `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=fttdhcaf&utm_source=github&utm_medium=readme&utm_campaign=post-x-promote-make-your-own-bounty-01) · AI agents build software for cash rewards</sub>
